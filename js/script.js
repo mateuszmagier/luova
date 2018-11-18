@@ -2,7 +2,7 @@ $(function () {
 
     // smooth scrolling setup
     const smoothScroll = new SmoothScroll('a[href*="#"]', {
-        speed: 800
+        speed: 400
     });
 
     const collapsedNavMedia = window.matchMedia("(min-width: 601px)");
