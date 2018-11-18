@@ -13,6 +13,9 @@
         grid-template-columns: 1fr 1fr 1fr;
         grid-row-gap: 10px;
         grid-column-gap: 10px;
+        @media all and (min-width: 1801px) {
+            width: 70%;
+        }
     }
     .opinion {
         display: flex;
@@ -43,6 +46,8 @@
         &__author {
             color: orange;
             text-align: right;
+            font-size: 1.1em;
+            margin-top: 15px;
         }
     }
     .clients {
@@ -52,12 +57,19 @@
             -webkit-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 1);
             -moz-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 1);
             box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 1);
+            @media all and (min-width: 1801px) {
+                width: 70%;
+            }
         }
         &__header {
             text-align: center;
             padding: 10px 0;
             background-color: black;
             color: orange;
+            @media all and (min-width: 1501px) {
+                padding: 17px 0;
+                font-size: 1.4em;
+            }
         }
         &__content {
             display: grid;

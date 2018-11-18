@@ -32,6 +32,9 @@
         grid-column-gap: 10%;
         position: relative;
         z-index: 1;
+        @media all and (min-width: 1801px) {
+            width: 70%;
+        }
     }
 
     .member {

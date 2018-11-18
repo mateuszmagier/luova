@@ -49,6 +49,10 @@
         display: inline-flex;
         width: 70%;
 
+        @media all and (min-width: 1501px) {
+            width: 50%;
+        }
+
         @media all and (max-width: 600px) {
             width: 100%;
             display: none;
