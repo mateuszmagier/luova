@@ -5,10 +5,21 @@
     color: orange;
     width: 100%;
     padding: 60px 0 40px 0;
+    @media all and (max-width: 600px) {
+        padding-top: 40px;
+    }
     &__heading {
         font-size: 1.9em;
         width: 60%;
         margin: 0 auto;
+        @media all and (max-width: 450px) {
+            width: 80%;
+            font-size: 1.4em;
+        }
+        @media all and (min-width: 451px) and (max-width: 600px) {
+            width: 80%;
+            font-size: 1.6em;
+        }
         @media all and (min-width: 1501px) {
             font-size: 2.1em;
         }
@@ -20,6 +31,8 @@
         letter-spacing: 5px;
     }
     .button {
+        display: block;
+        text-decoration: none;
         font-size: 1.5em;
         width: 200px;
         height: 40px;
@@ -27,6 +40,12 @@
         margin: 0 auto;
         margin-top: 30px;
         border-radius: 12px;
+        @media all and (max-width: 450px) {
+            width: 150px;
+            height: 35px;
+            line-height: 35px;
+            font-size: 1.2em;
+        }
         @media all and (min-width: 1501px) {
             width: 250px;
             font-size: 1.8em;

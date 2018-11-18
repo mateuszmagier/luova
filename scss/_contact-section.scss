@@ -17,6 +17,12 @@
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
+        @media all and (max-width: 600px) {
+            flex-direction: column;
+        }
+        @media all and (min-width: 601px) and (max-width: 800px) {
+            width: 90%;
+        }
         @media all and (min-width: 1801px) {
             width: 70%;
         }
@@ -29,6 +35,10 @@
         -moz-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 1);
         box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 1); // display: inline-block;
         width: 40%;
+        @media all and (max-width: 600px) {
+            width: 100%;
+            margin-bottom: 15px;
+        }
         &__header {
             background-color: rgba(0, 0, 0, .5);
             padding: 15px 0;
@@ -71,6 +81,9 @@
         -webkit-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 1);
         -moz-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 1);
         box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 1);
+        @media all and (max-width: 600px) {
+            width: 100%;
+        }
         &__header {
             font-size: 1.2em;
             font-weight: 700;
@@ -147,6 +160,11 @@
                 border-color: rgba(255, 165, 0, 1);
             }
         }
+        &__button-wrapper {
+            @media all and (max-width: 600px) {
+                text-align: center;
+            }
+        }
         &__button {
             width: 150px;
             padding: 5px 0;
@@ -159,6 +177,7 @@
             cursor: pointer;
             background: none;
             transition: all .3s ease;
+            
             &:hover {
                 cursor: pointer;
                 background-color: orange;

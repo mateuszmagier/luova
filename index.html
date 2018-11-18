@@ -51,7 +51,7 @@ and open the template in the editor.
             <span class="about-section__brand">LUOVA</span> volutpat viverra aliquam eu scelerisque lacus ante ipsum,
             primis in faucibus orci luctus et ultrices posuere cubilia.
         </div>
-        <div class="button">CONTACT US</div>
+        <a data-scroll href="#contact-section" class="button">CONTACT US</a>
     </section>
     <section id="portfolio-section" class="portfolio-section">
         <h2 class="section-header">
@@ -66,9 +66,9 @@ and open the template in the editor.
                 <div class="project__description">
                     Mauris gravida, sem quis efficitur finibus, ipsum dolor interdum ante, sit amet aliquam elit
                     mauris id sem. Aliquam quis quam nibh. Integer nunc orci, eleifend bibendum commodo nec, finibus
-                    quis felis. Suspendisse fermentum libero eget consectetur ullamcorper. Nulla vel est quis mi
+                    quis felis. <span class="project__description--extra">Suspendisse fermentum libero eget consectetur ullamcorper. Nulla vel est quis mi
                     accumsan rutrum in nec metus. Duis nunc lorem, ultricies vel gravida consequat, hendrerit eget
-                    nibh.
+                    nibh.</span>
                 </div>
                 <div class="project__details button">
                     <a class="project__details-link" href="#">DETAILS</a>
@@ -82,9 +82,9 @@ and open the template in the editor.
                 <div class="project__description">
                     Mauris gravida, sem quis efficitur finibus, ipsum dolor interdum ante, sit amet aliquam elit
                     mauris id sem. Aliquam quis quam nibh. Integer nunc orci, eleifend bibendum commodo nec, finibus
-                    quis felis. Suspendisse fermentum libero eget consectetur ullamcorper. Nulla vel est quis mi
+                    quis felis. <span class="project__description--extra">Suspendisse fermentum libero eget consectetur ullamcorper. Nulla vel est quis mi
                     accumsan rutrum in nec metus. Duis nunc lorem, ultricies vel gravida consequat, hendrerit eget
-                    nibh.
+                    nibh.</span>
                 </div>
                 <div class="project__details button">
                     <a class="project__details-link" href="#">DETAILS</a>
@@ -98,9 +98,9 @@ and open the template in the editor.
                 <div class="project__description">
                     Mauris gravida, sem quis efficitur finibus, ipsum dolor interdum ante, sit amet aliquam elit
                     mauris id sem. Aliquam quis quam nibh. Integer nunc orci, eleifend bibendum commodo nec, finibus
-                    quis felis. Suspendisse fermentum libero eget consectetur ullamcorper. Nulla vel est quis mi
+                    quis felis. <span class="project__description--extra">Suspendisse fermentum libero eget consectetur ullamcorper. Nulla vel est quis mi
                     accumsan rutrum in nec metus. Duis nunc lorem, ultricies vel gravida consequat, hendrerit eget
-                    nibh.
+                    nibh.</span>
                 </div>
                 <div class="project__details button">
                     <a class="project__details-link" href="#">DETAILS</a>
@@ -114,9 +114,9 @@ and open the template in the editor.
                 <div class="project__description">
                     Mauris gravida, sem quis efficitur finibus, ipsum dolor interdum ante, sit amet aliquam elit
                     mauris id sem. Aliquam quis quam nibh. Integer nunc orci, eleifend bibendum commodo nec, finibus
-                    quis felis. Suspendisse fermentum libero eget consectetur ullamcorper. Nulla vel est quis mi
+                    quis felis. <span class="project__description--extra">Suspendisse fermentum libero eget consectetur ullamcorper. Nulla vel est quis mi
                     accumsan rutrum in nec metus. Duis nunc lorem, ultricies vel gravida consequat, hendrerit eget
-                    nibh.
+                    nibh.</span>
                 </div>
                 <div class="project__details button">
                     <a class="project__details-link" href="#">DETAILS</a>
@@ -271,7 +271,9 @@ and open the template in the editor.
                     <input class="contact-form__input input" name="email" type="email" placeholder="E-MAIL ADDRESS">
                     <input class="contact-form__input input" name="subject" type="text" placeholder="SUBJECT">
                     <textarea class="contact-form__input textarea" name="message" placeholder="MESSAGE"></textarea>
-                    <input class="contact-form__button" type="button" value="SEND">
+                    <div class="contact-form__button-wrapper">
+                        <input class="contact-form__button" type="button" value="SEND">
+                    </div>
                 </form>
             </div>
         </div>
