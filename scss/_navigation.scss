@@ -1,0 +1,80 @@
+.navigation-container {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    @media all and (max-width: 600px) {
+        flex-direction: column;
+    }
+    .navigation-header {
+        display: inline-block;
+        padding: 5px 30px;
+        background-color: black;
+        position: relative;
+        @media all and (max-width: 600px) {
+            text-align: center;
+        }
+        .brand {
+            color: white;
+            font-family: 'Delius Unicase', cursive;
+            font-size: 1.7em;
+            letter-spacing: 5px;
+        }
+        .button {
+            position: absolute;
+            right: 5px;
+            top: 5px;
+            width: 35px;
+            height: 35px;
+            display: none;
+            @media all and (max-width: 600px) {
+                display: block;
+            }
+            .fa-chevron-down {
+                line-height: 35px;
+                transform: rotateZ(180deg) translateY(3px);
+                transition: transform .3s ease-in;
+            }
+            &.collapsed {
+                .fa-chevron-down {
+                    transform: rotateZ(0);
+                }
+            }
+        }
+    }
+    .navigation {
+        display: inline-flex;
+        width: 70%;
+
+        @media all and (max-width: 600px) {
+            width: 100%;
+            display: none;
+        }
+        @media all and (min-width: 601px) and (max-width: 750px) {
+            width: 65%;
+        }
+        &__link {
+            flex-grow: 1;
+            text-align: center;
+            padding: 13px 0;
+            display: inline-block;
+            color: white;
+            font-family: 'Lato', sans-serif;
+            text-decoration: none;
+            &:hover {
+                background-color: black;
+                transition: all .3s ease-in;
+            }
+            @media all and (max-width: 600px) {
+                padding: 10px 0;
+                display: block;
+            }
+            @media all and (min-width: 601px) and (max-width: 750px) {
+                font-size: 0.9em;
+            }
+        }
+    }
+}

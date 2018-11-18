@@ -1,0 +1,151 @@
+.contact-section {
+    padding-top: 30px;
+    padding-bottom: 100px;
+    font-family: 'Lato', sans-serif;
+    background-image: url(images/contact-bg.jpg);
+    background-position: top;
+    background-size: cover;
+    .section-header {
+        color: orange;
+        &:after {
+            background-color: orange;
+        }
+    }
+    &__container {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .contact-info {
+        background-color: #111110;
+        color: orange;
+        text-align: center;
+        -webkit-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 1);
+        -moz-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 1);
+        box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 1); // display: inline-block;
+        width: 40%;
+        &__header {
+            background-color: rgba(0, 0, 0, .5);
+            padding: 15px 0;
+            font-size: 1.2em;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        &__content {
+            padding: 15px 0;
+            line-height: 28px;
+            font-size: 1.1em;
+            .link {
+                color: orange;
+            }
+        }
+        .social-links {
+            width: 50%;
+            display: inline-flex;
+            justify-content: space-between;
+            .fab {
+                font-size: 1.7em;
+                color: orange;
+            }
+        }
+    }
+    .contact-form {
+        width: 55%;
+        background-color: black;
+        padding-bottom: 20px;
+        -webkit-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 1);
+        -moz-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 1);
+        box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 1);
+        &__header {
+            font-size: 1.2em;
+            font-weight: 700;
+            letter-spacing: 1px;
+            width: 100%;
+            padding: 30px 0;
+            text-align: center;
+            color: orange;
+            background-color: black;
+        }
+        &__form {
+            width: 90%;
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+        &__input {
+            display: block;
+            margin-top: 10px;
+            width: 100%;
+            height: 40px;
+            background: none;
+            border: none;
+            border-top: rgba(255, 165, 0, .2) 1px solid;
+            border-bottom: rgba(255, 165, 0, .2) 1px solid;
+            color: orange;
+            opacity: .7;
+            padding-left: 5px;
+            font-size: 1.2em;
+            transition: .3s ease;
+            &::placeholder {
+                color: orange;
+                font-size: 0.8em;
+                opacity: .5;
+                letter-spacing: 0px;
+                transition: .3s ease;
+                font-family: 'Lato', sans-serif;
+            }
+            &:focus {
+                &::placeholder {
+                    opacity: 1;
+                    letter-spacing: 4px;
+                    transition: all .3s ease;
+                }
+            }
+        }
+        .input {
+            &:focus {
+                padding-top: 10px;
+                padding-bottom: 10px;
+                transition: all .3s ease;
+                outline: none;
+                border-width: 2px;
+                border-color: rgba(255, 165, 0, .5);
+            }
+        }
+        .textarea {
+            height: 28px;
+            padding-top: 12px;
+            resize: none;
+            overflow: hidden;
+            &:focus {
+                padding-top: 22px;
+                padding-bottom: 10px;
+                height: 150px;
+                transition: all .3s ease;
+                outline: none;
+                border-width: 2px;
+                border-color: rgba(255, 165, 0, .5);
+            }
+        }
+        &__button {
+            width: 150px;
+            padding: 5px 0;
+            text-align: center;
+            margin-top: 20px;
+            color: orange;
+            border: orange 1px solid;
+            font-family: 'Oswald', sans-serif;
+            font-size: 1.2em;
+            cursor: pointer;
+            background: none;
+            transition: all .3s ease;
+            &:hover {
+                cursor: pointer;
+                background-color: orange;
+                color: black;
+                transition: all .3s ease;
+            }
+        }
+    }
+}

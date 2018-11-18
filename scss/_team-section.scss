@@ -1,0 +1,107 @@
+.team-section {
+    font-family: 'Lato', sans-serif;
+    padding-bottom: 50px;
+    padding-top: 30px;
+    background-image: url(images/black_paper.png);
+    position: relative;
+
+    &__overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(black, .7);
+        z-index: 0;
+    }
+
+    .section-header {
+        color: orange;
+        position: relative;
+        z-index: 1;
+        &:after {
+            background-color: orange;
+        }
+    }
+    &__container {
+        width: 80%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-row-gap: 30px;
+        grid-column-gap: 10%;
+        position: relative;
+        z-index: 1;
+    }
+
+    .member {
+        background-color: rgba(black, .8);
+        padding: 30px 0;
+        transition: all .2s ease-in;
+        &:hover {
+        -webkit-box-shadow: 0px 0px 10px 2px rgba(orange, 0.75);
+            -moz-box-shadow: 0px 0px 10px 2px rgba(orange, 0.75);
+            box-shadow: 0px 0px 10px 2px rgba(orange, 0.75);
+            transition: all .2s ease-in;
+
+            .member__details {
+                border: none;
+            }
+
+            .member__name {
+                &:after {
+                    width: 80%;
+                    transition: all .2s ease-in;
+                }
+            }
+
+            .member__photo {
+                transform: scale(1.2);
+                transition: all .2s ease-in;
+            }
+        }
+
+        &__photo-wrapper {
+            width: 80%;
+            margin: 0 auto;
+            border-radius: 100%;
+            overflow: hidden;
+            text-align: center;
+            border: 1px solid orange;
+        }
+        &__photo {
+            width: 100%;
+            display: block;
+            transition: all .2s ease-in;
+        }
+        &__details {
+            margin-top: 10px;
+            border-left: 2px solid orange;
+            border-right: 2px solid orange;
+        }
+        &__name {
+            color: orange;
+            text-align: center;
+            font-weight: 700;
+            font-size: 1.5em;
+            margin-bottom: 5px;
+
+            &:after {
+                content: '';
+                display: block;
+                width: 50%;
+                margin: 0 auto;
+                margin-top: 5px;
+                background-color: orange;
+                height: 1px;
+                transition: all .2s ease-in;
+            }
+        }
+        &__position {
+            color: orange;
+            text-align: center;
+            font-style: italic;
+            font-size: 1.2em;
+        }
+    }
+}

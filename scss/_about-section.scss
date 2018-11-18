@@ -1,0 +1,28 @@
+.about-section {
+    font-family: 'Oswald', sans-serif;
+    background-color: black;
+    text-align: center;
+    color: orange;
+    width: 100%;
+    padding: 60px 0 40px 0;
+    &__heading {
+        font-size: 1.9em;
+        width: 60%;
+        margin: 0 auto;
+    }
+    &__brand {
+        color: white;
+        font-family: 'Delius Unicase', cursive;
+        font-size: 1em;
+        letter-spacing: 5px;
+    }
+    .button {
+        font-size: 1.5em;
+        width: 200px;
+        height: 40px;
+        line-height: 40px;
+        margin: 0 auto;
+        margin-top: 30px;
+        border-radius: 12px;
+    }
+}

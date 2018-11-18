@@ -1,0 +1,69 @@
+.portfolio-section {
+    width: 100%;
+    padding-top: 30px;
+    &__container {
+        width: 80%;
+        margin: 0 auto;
+        padding-bottom: 20px;
+        font-family: 'Lato', sans-serif;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 15px;
+        grid-row-gap: 13px;
+        .project {
+            background-color: black;
+            color: white;
+            width: 100%;
+            padding-bottom: 20px;
+            -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.75);
+            box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.75);
+            &__name {
+                text-transform: uppercase;
+                text-align: center;
+                padding: 12px 0;
+                color: orange;
+            }
+            &__image-wrapper {
+                overflow: hidden;
+            }
+            &__image {
+                display: block;
+                width: 100%;
+                transform: scale(1.5);
+                -webkit-filter: grayscale(100%);
+                filter: grayscale(100%);
+                transition: all .3s ease-out;
+                &:hover {
+                    transform: scale(1);
+                    -webkit-filter: none;
+                    filter: none;
+                    transition: all .3s ease-in;
+                }
+            }
+            &__description {
+                padding: 20px 30px;
+                line-height: 1.4;
+                text-align: center;
+            }
+            &__details {
+                width: 150px;
+                height: 35px;
+                line-height: 35px;
+                margin: 0 auto;
+                border-width: 2px;
+                &:hover .project__details-link {
+                    color: black;
+                }
+            }
+            &__details-link {
+                color: orange;
+                text-decoration: none;
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+                transition: color .2s ease-in;
+            }
+        }
+    }
+}
