@@ -38,6 +38,9 @@
     .section-header {
       font-size: 3em; } }
 
+.hidden-header {
+  display: none; }
+
 .navigation-container {
   background-color: rgba(0, 0, 0, 0.6);
   position: fixed;

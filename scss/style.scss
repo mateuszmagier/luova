@@ -43,6 +43,10 @@
     }
 }
 
+.hidden-header {
+    display: none;
+}
+
 @import 'navigation';
 @import 'home-section';
 @import 'about-section';
